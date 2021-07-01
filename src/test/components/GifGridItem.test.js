@@ -3,8 +3,11 @@ import { shallow } from 'enzyme';
 import { GifGridItem } from '../../components/GifGridItem';
 
 describe('Pruebas en <GifGridItem />', () => {
+    const title = 'Prueba Gif Item';
+    const url   = 'https://localhost/algo.jpg';
+
     test('Debe mostrar el componente correctamente', () => {
-        const wrapper = shallow(<GifGridItem />);
+        const wrapper = shallow(<GifGridItem title={title} url={url} />);
 
         expect(wrapper).toMatchSnapshot();
     });
