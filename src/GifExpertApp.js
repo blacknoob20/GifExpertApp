@@ -2,10 +2,10 @@ import React, { Fragment, useState } from 'react';
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-const GifExpertApp = () => {
+const GifExpertApp = ({categoriasDef = []}) => {
     // const categorias = ['One Puch','Samurai X','Dragon Ball'];
     // const [categorias, setCategorias] = useState(['One Puch','Samurai X','Dragon Ball'])
-    const [categorias, setCategorias] = useState(['One Puch Man']);
+    const [categorias, setCategorias] = useState(categoriasDef);
     
     // const handelAdd = () => {
     //     setCategorias(['Hunter x Hunter',...categorias]);

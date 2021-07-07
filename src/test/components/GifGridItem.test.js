@@ -27,7 +27,6 @@ describe('Pruebas en <GifGridItem />', () => {
     test('Debe tener animate__fadeIn', () => {
         const div = wrapper.find('div');
 
-        console.log();
         expect(div.prop('className').includes('animate__bounce')).toBe(true);
         // expect(div.props().className).toEqual(expect.stringMatching(/^(animate__bounce)/));
     })
